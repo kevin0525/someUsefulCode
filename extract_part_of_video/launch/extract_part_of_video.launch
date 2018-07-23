@@ -1,0 +1,13 @@
+<launch>
+  <node pkg="extract_part_of_video" name="extract_part_of_video_node" type="extract_part_of_video_node" output="screen">
+  <param name="fps" type="double" value="30"/>
+  <param name="width" type="double" value="640"/>
+  <param name="height" type="double" value="480"/>
+  <param name="beginTime" type="double" value="40.0"/>
+  <param name="endTime" type="double" value="50.0"/>
+  <param name="sourceVideoLocation" type="string" value="/home/kevin/workspace/IARC/video/bottom_view_0826.avi"/>
+  <param name="resultVideoLocation" type="string" value="/home/kevin/workspace/IARC/video/bottom_view_0826_short.avi"/>
+  <param name="ifshowSourceVideo" type="bool" value="true"/>
+  <param name="ifSaveVideo" type="bool" value="true"/>
+  </node>
+</launch>
